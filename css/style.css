@@ -1,0 +1,94 @@
+/* базовые стили */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    /* наследовать от родителя - inherit */
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    /* убрать маркер из списка */
+    list-style: none;
+}
+
+/* стили проекта */
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.hero {
+    background-image: url(../img/Travel\ Time.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    /* padding-top: 72px */
+    display: flex;
+}
+
+.hero__content {
+    display: flex;
+    /* смена направл главной оси */
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.header {
+    background-color: bisque;
+
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+}
+
+.nav__link {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 0;
+    color: white;
+
+}
+
+.nav__link:hover {
+    text-decoration: solid 2px underline white;
+    text-underline-offset: 10px;
+}
+
+.hero__main {
+    background-color: forestgreen;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__desc {
+    flex: 1;
+}
